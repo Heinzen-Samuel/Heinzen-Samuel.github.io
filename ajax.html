@@ -10,23 +10,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="assets/bootstrap/bootstrap.js"></script>
 
-		<script>
-			function loadJoke() {
-			    var xhttp = new XMLHttpRequest();
-			  
-			    xhttp.onreadystatechange = function() {
-				    if (this.readyState == 4 && this.status == 200) {
-				      document.getElementById("joke").innerHTML = this.responseText;
-				    }
-			    };
-			  
-			    xhttp.open('GET', 'https://icanhazdadjoke.com/', true);
-			    xhttp.setRequestHeader('Accept', 'text/plain');
-			    xhttp.setRequestHeader('User-Agent', 'my email');
 
-			    xhttp.send();
-			}
-		</script>
 	</head>
 
 	<body>
