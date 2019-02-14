@@ -15,7 +15,33 @@
 	<body>
 		<script src="includes/navbar.js"></script>
 
-		
+		<!-- Button to Open the Modal -->
+		<div class="container">
+			<button type="button" id="com-btn" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">
+		  		Add Comment
+			</button>
+		</div>
+
+		<!-- The Modal -->
+		<div class="modal fade" id="myModal">
+		  	<div class="modal-dialog">
+		    	<div class="modal-content">
+
+			      <!-- Modal body -->
+			      <div class="modal-body">
+			          <form>
+					    <div class="form-group">
+					      <label for="comment">Comment:</label>
+					      <textarea class="form-control" rows="5" id="comment"></textarea>
+					    </div>
+					    <button type="submit" class="btn btn-default">Submit</button>
+					    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					  </form>
+			      </div>
+
+		    	</div>
+		  	</div>
+		</div>
 
 		<div class="footer">
 			<p>Copyright © 2018 by Samuel Heinzen</p>

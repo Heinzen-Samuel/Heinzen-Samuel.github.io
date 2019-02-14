@@ -60,6 +60,19 @@ body {
   }
 }
 
+#com-btn {
+  display: block; 
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#myModal {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .footer {
    position: fixed;
    left: 0;
