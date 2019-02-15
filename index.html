@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
 		<link type="text/css" rel="stylesheet" href="assets/homepage.css"/>
+		<link type="text/css" rel="stylesheet" href="assets/comment.css"/>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.js"></script>
@@ -35,14 +36,14 @@
 
 			      <!-- Modal body -->
 			        <div class="modal-body">
-			            <form id="newComment">
+			            <form id="newComment" onsubmit="return false;">
 						    <div class="form-group">
 						        <label for="comment">Name:</label>
-						        <textarea class="form-control" rows="1" name="name" "></textarea>
+						        <textarea class="form-control" rows="1" id="commentName" "></textarea>
 						        <label for="comment">Comment:</label>
-						        <textarea class="form-control" rows="5" name="comment" "></textarea>
+						        <textarea class="form-control" rows="5" id="commentText" "></textarea>
 						    </div>
-						    <button type="submit" class="btn btn-default">Submit</button>
+						    <button type="submit" class="btn btn-default" onclick="$('.modal').modal('hide')">Submit</button>
 					    </form>
 			        </div>
 
@@ -50,8 +51,9 @@
 		  	</div>
 		</div>
 
-		<div class="container">
-			
+		<div class="container" id="comment-section" align="center">
+			<div id="com">
+			</div>
 		</div>
 
 		<div class="footer">

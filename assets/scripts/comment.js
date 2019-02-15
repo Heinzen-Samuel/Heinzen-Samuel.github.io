@@ -1,18 +1,28 @@
-const userComment = {};
+function addComment() {
+  var author = document.getElementById("commentName").value;
+  var text = document.getElementById("commentText").value;
 
-function getValues(e) {
-  // turn form elements object into an array
-  const elements = Array.prototype.slice.call(e.target.elements);
+  // Creating text from form
+  var message = document.createElement("h4");
+  var node1 = document.createTextNode(text);
+  message.appendChild(node1);
 
-  // go over the array storing input name & value pairs
-  elements.forEach((el) => {
-    if (el.type !== "submit") {
-      userComment[el.name] = el.value;
-    }
-  });
+  var name = document.createElement("h3");
+  var node2 = document.createTextNode(author);
+  name.appendChild(node2)
 
-  // finally save to localStorage
-  localStorage.setItem('userComment', JSON.stringify(userComment));
+  var hr = document.createElement("hr");
+  var div = document.createElement("div");
+  div.className = "comment-box";
+
+  div.appendChild(name);
+  div.appendChild(hr);
+  div.appendChild(message);
+
+  var element = document.getElementById("com");
+  element.appendChild(div);
+
+  document.getElementById("newComment").reset();
 }
 
-document.getElementById("newComment").addEventListener("submit", getValues);
+document.getElementById("newComment").addEventListener("submit", addComment);
