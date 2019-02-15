@@ -6,5 +6,6 @@ h2 {
 	padding-right: 2%;
   padding-bottom: 2%;
   padding-top: 1.5%;
-  max-width: 40%;
+  max-width: 80%;
+  min-width: 40%;
 }
