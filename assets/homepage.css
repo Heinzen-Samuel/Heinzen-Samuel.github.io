@@ -1,5 +1,11 @@
 body {
-  background-color: #96ddfe;
+  background: url('img/background_island.png') no-repeat center center;
+}
+
+#center-div {
+  background-color: rgba(150,221,254,0.5);
+  overflow: auto;
+  min-height: 100vh;
 }
 
 .jumbotron {
@@ -58,15 +64,4 @@ body {
     display: inline-block;
     margin-right: -4px;
   }
-}
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   padding-top: 8px;
-   width: 100%;
-   background-color: #96ddfe;
-   color: black;
-   text-align: center;
 }

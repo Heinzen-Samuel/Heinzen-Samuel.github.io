@@ -14,52 +14,50 @@
 		<script src="assets/bootstrap/js/bootstrap.js"></script>
 	</head>
 	<body>
-		<script src="includes/navbar.js"></script>
+		<div class="container" id="center-div">
+			<script src="includes/navbar.js"></script>
 
-		<!-- Button to Open the Modal -->
-		<div class="container">
-			<button type="button" id="com-btn" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">
-		  		Add Comment
-			</button>
-		</div>
-
-		<!-- The Modal -->
-		<div class="modal fade" id="myModal">
-		  	<div class="modal-dialog">
-		    	<div class="modal-content">
-
-    		      <!-- Modal Header -->
-			        <div class="modal-header">
-			        	<h4 class="modal-title">New Comment</h4>
-			        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-			        </div>
-
-			      <!-- Modal body -->
-			        <div class="modal-body">
-			            <form id="newComment" onsubmit="return false;">
-						    <div class="form-group">
-						        <label for="comment">Name:</label>
-						        <textarea class="form-control" rows="1" id="commentName" "></textarea>
-						        <label for="comment">Comment:</label>
-						        <textarea class="form-control" rows="5" id="commentText" "></textarea>
-						    </div>
-						    <button type="submit" class="btn btn-default" onclick="$('.modal').modal('hide')">Submit</button>
-					    </form>
-			        </div>
-
-		    	</div>
-		  	</div>
-		</div>
-
-		<div class="container" id="comment-section" align="center">
-			<div id="com">
+			<!-- Button to Open the Modal -->
+			<div class="container">
+				<button type="button" id="com-btn" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">
+			  		Add Comment
+				</button>
 			</div>
-		</div>
 
-		<div class="footer">
-			<p>Copyright © 2018 by Samuel Heinzen</p>
-		</div>
+			<!-- The Modal -->
+			<div class="modal fade" id="myModal">
+			  	<div class="modal-dialog">
+			    	<div class="modal-content">
 
-		<script src="assets/scripts/comment.js"></script>
+	    		      <!-- Modal Header -->
+				        <div class="modal-header">
+				        	<h4 class="modal-title">New Comment</h4>
+				        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        </div>
+
+				      <!-- Modal body -->
+				        <div class="modal-body">
+				            <form id="newComment" onsubmit="return false;">
+							    <div class="form-group">
+							        <label for="comment">Name:</label>
+							        <textarea class="form-control" rows="1" id="commentName"></textarea>
+							        <label for="comment">Comment:</label>
+							        <textarea class="form-control" rows="5" id="commentText"></textarea>
+							    </div>
+							    <button type="submit" class="btn btn-default" onclick="$('.modal').modal('hide')">Submit</button>
+						    </form>
+				        </div>
+
+			    	</div>
+			  	</div>
+			</div>
+
+			<div class="container" id="comment-section" align="center">
+				<div id="com">
+				</div>
+			</div>
+
+			<script src="assets/scripts/comment.js"></script>
+		</div>
 	</body>
 </html>
