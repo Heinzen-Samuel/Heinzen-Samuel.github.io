@@ -50,8 +50,29 @@ function component(width, height, color, x, y) {
   }
 
   this.newPos = function() {
-    this.x += this.speedX;
-    this.y += this.speedY; 
+    if (this.speedX == -1) {
+      if (this.x != 0) {
+        this.x += this.speedX;
+      }
+    }
+
+    if (this.speedX == 1) {
+      if (this.x != 570) {
+        this.x += this.speedX;
+      }
+    }
+
+    if (this.speedY == -1) {
+      if (this.y != 0) {
+        this.y += this.speedY;
+      }
+    }
+
+    if (this.speedY == 1) {
+      if (this.y != 270) {
+        this.y += this.speedY;
+      }
+    }
   }
 
   this.crashWith = function(otherobj) {
@@ -95,11 +116,24 @@ function updateGameArea() {
   }
   
   myGamePiece.speedX = 0;
-  myGamePiece.speedY = 0; 
-  if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.speedX = -1; }
-  if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.speedX = 1; }
-  if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speedY = -1; }
-  if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speedY = 1; }
+  myGamePiece.speedY = 0;
+
+  if (myGameArea.keys && myGameArea.keys[37]) {
+    myGamePiece.speedX = -1; 
+  }
+
+  if (myGameArea.keys && myGameArea.keys[39]) {
+    myGamePiece.speedX = 1; 
+  }
+
+  if (myGameArea.keys && myGameArea.keys[38]) {
+    myGamePiece.speedY = -1; 
+  }
+
+  if (myGameArea.keys && myGameArea.keys[40]) {
+    myGamePiece.speedY = 1; 
+  }
+
   myGamePiece.newPos();
   myGamePiece.update();
 }
