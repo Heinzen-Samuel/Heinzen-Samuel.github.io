@@ -1,5 +1,8 @@
 var myGamePiece;
 var myObstacles = [];
+var astOne;
+var astTwo;
+var astThree;
 
 function startGame() {
     myGameArea.start();
