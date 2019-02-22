@@ -12,18 +12,31 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.js"></script>
-		<script src="assets/scripts/spacegame.js"></script>
 	</head>
 	<body>
 
 		<div class="container" id="center-div">
 			<script src="includes/navbar.js"></script>
 
-			<div id="GameStage"></div>
+			<button onclick="startGame()" id="game-btn" class="btn btn-primary">Start Game</button>
+			<canvas id="myCanvas"></canvas>
+
+			<h4>Controls on keyboad</h4>
+			<div id="wrapper">
+  				<div id="controls">
+				  <button id="keyboard_key_up" class="movements_control" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">^</button>
+
+				  <button id="keyboard_key_left" class="movements_control" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()"><</button>
+
+				  <button id="keyboard_key_down" class="movements_control" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">v</button>
+
+				  <button id="keyboard_key_right" class="movements_control" onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">></button>
+				</div>
+			</div>
+
+			</div>
 		</div>
 
-		<script type="text/javascript">
-	    	startGame();
-		</script>
+		<script src="assets/scripts/spacegame.js"></script>
 	</body>
 </html>
