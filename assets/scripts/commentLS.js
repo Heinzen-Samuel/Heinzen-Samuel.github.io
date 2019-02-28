@@ -23,11 +23,11 @@ function getDate() {
   var yyyy = today.getFullYear();
 
   if(dd<10) {
-      dd='0'+dd
+      dd='0'+dd;
   } 
 
   if(mm<10) {
-      mm='0'+mm
+      mm='0'+mm;
   } 
 
   return today = yyyy+'-'+mm+'-'+dd;
@@ -61,20 +61,24 @@ function submitComment() {
 
   comments.push({"Name":name, "Comment":comment, "Date":d});
 
-  setComments()
+  setComments();
   displayComments();
 }
 
 
 function displayComments() {
-  var parseComments = JSON.parse(localStorage.getItem('Comments'));
+  setJSON();
   var element = document.getElementById("com");
 
-  for(var i in parseComments) {
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+  }
 
-    var name = parseComments[i].Name;
-    var comm = parseComments[i].Comment;
-    var date = parseComments[i].Date;
+  for(var i in comments) {
+
+    var name = comments[i].Name;
+    var comm = comments[i].Comment;
+    var date = comments[i].Date;
 
     var com_name = document.createElement("h3");
     var node1 = document.createTextNode(name);
@@ -92,7 +96,6 @@ function displayComments() {
     div.appendChild(hr);
     div.appendChild(com_text);
 
-    var element = document.getElementById("com");
     element.appendChild(div);
   }
 
