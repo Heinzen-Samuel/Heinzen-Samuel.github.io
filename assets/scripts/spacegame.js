@@ -1,12 +1,19 @@
 var myGamePiece;
+var audio = document.getElementById("audio");
 var myObstacles = [];
 var astOne;
 var astTwo;
 var astThree;
 
 function startGame() {
+    play();
     myGameArea.start();
-    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece = new component(30, 30, "red", 10, 120);  
+}
+
+function play(){
+   audio.volume = 0.1;
+   audio.play();
 }
 
 var myGameArea = {
@@ -110,7 +117,7 @@ function updateGameArea() {
   myGameArea.frameNo += 1;
   if (myGameArea.frameNo == 1 || everyinterval(150)) {
     x = myGameArea.canvas.width;
-    y = myGameArea.canvas.height - 200
+    y = myGameArea.canvas.height - 200;
     myObstacles.push(new component(10, 200, "green", x, y));
   }
   for (i = 0; i < myObstacles.length; i += 1) {

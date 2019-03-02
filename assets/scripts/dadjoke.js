@@ -9,7 +9,7 @@ function loadJoke() {
   
     xhttp.open('GET', 'https://icanhazdadjoke.com/', true);
     xhttp.setRequestHeader('Accept', 'text/plain');
-    xhttp.setRequestHeader('User-Agent', 'my email');
+    xhttp.setRequestHeader('User-Agent', 'hei17013@byui.edu');
 
     xhttp.send();
 }

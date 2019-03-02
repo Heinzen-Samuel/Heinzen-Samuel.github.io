@@ -20,8 +20,12 @@
 
 			<button onclick="startGame()" id="game-btn" class="btn btn-primary">Start Game</button>
 			<canvas id="myCanvas"></canvas>
+			<audio id="audio" src="assets/audio/spacegame_background.mp3"></audio>
+			<p>Music by: Sirius Beat - One</p>
+			<a href="http://youtu.be/foKOqaimVv4">http://youtu.be/foKOqaimVv4</a>
 
-			<h4>Controls on keyboad</h4>
+			<br>
+
 			<div id="wrapper">
   				<div id="controls">
 				  <button id="keyboard_key_up" class="movements_control" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">^</button>
@@ -33,6 +37,8 @@
 				  <button id="keyboard_key_right" class="movements_control" onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">></button>
 				</div>
 			</div>
+
+			<h4>Use the above keys on the keyboard<br>to move the ship!</h4>
 
 			</div>
 		</div>
