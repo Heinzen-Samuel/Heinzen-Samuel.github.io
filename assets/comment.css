@@ -101,13 +101,3 @@
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
 }
-
-.slid-in {
-    position:relative;
-    animation:slidein 0.3s
-}
-
-@keyframes slidein {
-    from {bottom:-100px;opacity:0} 
-    to {bottom:0;opacity:1}
-}
