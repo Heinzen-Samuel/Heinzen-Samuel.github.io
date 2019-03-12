@@ -1,0 +1,32 @@
+.section {
+	background-color: rgba(150,221,254,0.5);
+	width: auto;
+	overflow: auto;
+	border-radius: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+.btn {
+  display: block; 
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.row {
+	margin: 10px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  width: 100%;
+}

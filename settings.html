@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<htm lang="en">
+
+<html>
+	<head>
+		<title>Heinzen Island</title>
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+
+		<link rel="stylesheet" href="assets/homepage.css">
+		<link rel="stylesheet" href="assets/settings.css">
+		
+		<script src="assets/scripts/settings.js"></script>
+	</head>
+	<body>
+		<div class="container" id="center-div">
+			<script src="includes/navbar.js"></script>
+
+			<br>
+
+			<div class="section" id="back-image">
+				<div align="center">
+					<h3>Select a background</h3>
+				</div>
+				
+				<div class="row">
+				    <div class="column">
+				    	<img src="assets/img/background_island.png" alt="Island">
+						<button  class="btn btn-primary" value="background_island.png" onclick="changeBackground(this);">
+			  				Select
+						</button>
+				    </div>
+				    <div class="column">
+				    	<img src="assets/img/background_lake.png" alt="lake">
+						<button  class="btn btn-primary" value="background_lake.png" onclick="changeBackground(this);">
+			  				Select
+						</button>
+				    </div>
+				    <div class="column">
+				    	<img src="assets/img/background_asian.png" alt="Asian">
+						<button  class="btn btn-primary" value="background_asian.png" onclick="changeBackground(this);">
+			  				Select
+						</button>
+				    </div>
+				</div>
+			</div>
+
+
+			<script src="assets/scripts/background.js"></script>
+		</div>
+	</body>
+</html>

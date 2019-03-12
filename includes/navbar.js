@@ -10,6 +10,7 @@ document.write('\
 			<li><a href="index.html">Homepage</a></li>\
 			<li><a href="spacegame.html">Spacegame</a></li>\
 			<li><a href="projects.html">Projects</a></li>\
+			<li><a href="settings.html">Settings</a></li>\
 		</ul>\
 	</div>\
 \

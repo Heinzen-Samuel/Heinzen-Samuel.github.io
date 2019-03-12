@@ -90,7 +90,7 @@ function displayComments() {
 
     var hr = document.createElement("hr");
     var div = document.createElement("div");
-    div.className = "comment-box";
+    div.classList.add("comment-box");
 
     div.appendChild(com_name);
     div.appendChild(hr);
