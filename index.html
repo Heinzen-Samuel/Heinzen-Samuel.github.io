@@ -10,6 +10,7 @@
 
 		<link rel="stylesheet" href="assets/homepage.css">
 		<link rel="stylesheet" href="assets/comment.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<script src="assets/scripts/settings.js"></script>
 	</head>
@@ -24,7 +25,6 @@
 			</div>
 
 			<div id="myModal" class="modal">
-
 				<div class="modal-content">
 				    <div class="modal-header">
 			        	<h4 class="modal-title">New Comment</h4>
@@ -35,19 +35,14 @@
 			            <form id="newComment">
 						    <div class="form-group">
 						        <label for="comment">Name:</label>
-						        <textarea onkeyup="keypress()" class="form-control" rows="1" id="commentName" ></textarea>
+						        <textarea onkeyup="keypress()" class="form-control" rows="1" id="commentName"></textarea>
 						        <label for="comment">Comment:</label>
 						        <textarea onkeyup="keypress()" class="form-control" rows="5" id="commentText"></textarea>
 						    </div>
 						    <button type="submit" class="btn btn-default">Submit</button>
 					    </form>
 				    </div>
-
-				    <div class="modal-footer">
-				    	<!-- Plan to add additional buttons here like "like" & "attactch" -->
-				    </div>
 				</div>
-
 			</div>
 
 			<div class="container" id="comment-section" align="center">
@@ -55,7 +50,7 @@
 				</div>
 			</div>
 
-			<script src="assets/scripts/modal.js"></script>			
+			<script src="assets/scripts/modal.js"></script>	
 			<script src="assets/scripts/comment.js">
 				load_data();
 			</script>
