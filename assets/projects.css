@@ -6,6 +6,12 @@
 	padding-bottom: 2%;
 	margin-left: 120px;
 	margin-right: 120px;
+  	-webkit-transition: background-color 0.8s; /* For Safari 3.1 to 6.0 */
+  	transition: background-color 0.8s;
+}
+
+.section:hover {
+	background-color: rgba(239,249,255,0.7);
 }
 
 #joke {
@@ -18,4 +24,14 @@
   	padding-top: 1.5%;
   	max-width: 80%;
   	min-width: 40%;
+}
+
+.slid-in {
+	position:relative;
+	animation:slidein 0.3s
+}
+
+@keyframes slidein {
+	from {bottom:-100px;opacity:0} 
+	to {bottom:0;opacity:1}
 }

@@ -1,54 +1,54 @@
 body {
-  background: url('img/background_island.png') no-repeat center center;
+    background: url('img/background_island.png') no-repeat center center;
 }
 
 #center-div {
-  background-color: rgba(150,221,254,0.5);
-  overflow: auto;
-  min-height: 100vh;
+    background-color: rgba(150,221,254,0.5);
+    overflow: auto;
+    min-height: 100vh;
 }
 
 .jumbotron {
-  background: url('img/jumbo.png') no-repeat center center;
-  background-position: relative;
-  background-size: contain;
-  margin-bottom: 0;
+    background: url('img/jumbo.png') no-repeat center center;
+    background-position: relative;
+    background-size: contain;
+    margin-bottom: 0;
 }
 
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #133f63;
-  text-align:center;
-  border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #133f63;
+    text-align:center;
+    border-radius: 10px;
 }
 
 ul.topnav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  display: inline;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    display: inline;
 }
 
 ul.topnav li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
 }
 
 ul.topnav li a:hover:not(.active) {
-  background-color: #005f5f;
+    background-color: #005f5f;
 }
 
 ul.topnav li a.active {
-  background-color: #96ddfe;
+    background-color: #96ddfe;
 }
 
 @media screen and (max-width: 600px) {
-  ul.topnav li {
-    float: none;
-  }
+    ul.topnav li {
+        float: none;
+    }
 }

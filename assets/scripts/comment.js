@@ -90,7 +90,7 @@ function displayComments() {
 
     var hr = document.createElement("hr");
     var div = document.createElement("div");
-    div.classList.add("comment-box");
+    div.classList.add("comment-box","slid-in");
 
     div.appendChild(com_name);
     div.appendChild(hr);
