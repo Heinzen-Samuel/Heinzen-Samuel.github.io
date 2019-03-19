@@ -1,0 +1,58 @@
+body {
+  background-color: #314f3c;
+}
+
+.overhead {
+  position: absolute;
+  margin: 20px;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+#center-div {
+  overflow: auto;
+  min-height: 100vh;
+}
+
+#logo {
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  width: 60%;
+  transition: width .2s;
+}
+
+#logo:hover {
+  width: 65%;
+}
+
+.parallax  {
+  z-index: -2;
+  left:0;
+  right:0;
+  height: 192px;
+  -webkit-animation: slide 700s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
+}
+
+#top-bkgd {
+}
+
+#mid-bkgd {
+}
+
+#bot-bkgd {
+  position: fixed;
+  bottom: 0;
+  background:url('img/grass.png') 0 0;
+}
+
+
