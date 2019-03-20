@@ -7,26 +7,57 @@ body {
   margin: 20px;
   left: 0px;
   top: 0px;
+  z-index: 3;
+}
+
+#layer-2 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
   z-index: 2;
 }
 
-#center-div {
-  overflow: auto;
-  min-height: 100vh;
+#layer-1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 #logo {
   display: block;
-  margin-top: 5%;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
-  width: 60%;
-  transition: width .2s;
+  width: 90%;
+  transform: scale(1,1);
+  -webkit-animation: excited .8s linear infinite;
 }
 
-#logo:hover {
-  width: 65%;
+@-webkit-keyframes excited {
+  0%   {transform: scale(1,1);}
+  50%  {transform: scale(1.03,.97);}
+  100% {transform: scale(1,1);}
+}
+
+.btn-menu {
+  background-color: green;
+  border-color: green;
+  border-radius: 40px;
+  font-size: 40px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn-menu:hover {
+  background-color: gray;
+  border-color: gray;
 }
 
 .parallax  {
