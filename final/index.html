@@ -8,6 +8,8 @@
 
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="assets/homepage.css">
+		<link rel="stylesheet" href="assets/parallax.css">
+		<link rel="stylesheet" href="assets/modal.css">
 	</head>
 	<body>
 		<div class="overhead">
@@ -20,17 +22,37 @@
 
 		<div class="container" id="layer-1">
 			<div class="wrapper">
-				<button type="button" id="find-btn" class="btn btn-primary btn-menu ">
+				<button type="button" id="find-btn" class="btn btn-primary btn-menu">
 			  		Find Scabs
 				</button>
 
-				<button type="button" id="rec-btn" class="btn btn-primary btn-menu ">
+				<button type="button" id="rec-btn" class="btn btn-primary btn-menu">
 			  		Record Calories
 				</button>
 
-				<button type="button" id="view-btn" class="btn btn-primary btn-menu ">
+				<button type="button" id="view-btn" class="btn btn-primary btn-menu">
 			  		View Scabs
 				</button>
+
+				<button type="button" id="view-btn" class="btn btn-primary btn-menu">
+			  		Profile Data
+				</button>
+			</div>
+		</div>
+
+		<div class="modal" id="find-modal">
+			<div class="modal-content animate-zoom">
+				<div class="modal-header">
+					<h2>Modal Header</h2>
+				    <span class="close">&times;</span>
+				</div>
+				<div class="modal-body">
+				    <p>Some text in the Modal Body</p>
+				    <p>Some other text...</p>
+				</div>
+				<div class="modal-footer">
+				    <h3>Modal Footer</h3>
+				</div>
 			</div>
 		</div>
 
@@ -39,5 +61,7 @@
 			<div class="parallax" id="mid-bkgd"></div>
 			<div class="parallax" id="bot-bkgd"></div>
 		</div>
+
+		<script src="assets/scripts/find.js"></script>	
 	</body>
 </html>

@@ -1,0 +1,31 @@
+.parallax  {
+  position: fixed;
+  z-index: -2;
+  left:0;
+  right:0;
+  bottom: 0;
+}
+
+@-webkit-keyframes slide {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
+}
+
+#top-bkgd {
+  background-size: 50%;
+  background:url('img/trees.png') repeat center;
+  -webkit-animation: slide 1000s linear infinite;
+}
+
+#mid-bkgd {
+  height: 100%;
+  background:url('img/trees.png') repeat;
+  -webkit-animation: slide 900s linear infinite;
+}
+
+#bot-bkgd {
+  height: 192px;
+  background:url('img/grass.png') repeat;
+  -webkit-animation: slide 700s linear infinite;
+}

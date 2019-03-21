@@ -59,31 +59,3 @@ body {
   background-color: gray;
   border-color: gray;
 }
-
-.parallax  {
-  z-index: -2;
-  left:0;
-  right:0;
-  height: 192px;
-  -webkit-animation: slide 700s linear infinite;
-}
-
-@-webkit-keyframes slide {
-  0%   {left:0;}
-  50%  {left:-9999px;}
-  100% {left:0;}
-}
-
-#top-bkgd {
-}
-
-#mid-bkgd {
-}
-
-#bot-bkgd {
-  position: fixed;
-  bottom: 0;
-  background:url('img/grass.png') 0 0;
-}
-
-
