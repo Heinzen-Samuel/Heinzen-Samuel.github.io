@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Snap-ITC;
+  src: url(snap_itc.woff);
+}
+
+.modal h1 {
+  font-family: Snap-ITC;
+  color: #87350c;
+  font-size: 60px;
+  margin: 0;
+}
