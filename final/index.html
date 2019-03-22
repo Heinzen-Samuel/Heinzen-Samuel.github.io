@@ -6,7 +6,6 @@
 		<title>Scabs</title>
 		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
-		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="assets/homepage.css">
 		<link rel="stylesheet" href="assets/parallax.css">
 		<link rel="stylesheet" href="assets/modal.css">
@@ -16,51 +15,99 @@
 			<a href="../index.html" class="btn btn-primary">&#x25C1; Back</a>
 		</div>
 
-		<div id="layer-2">
+		<div id="logo-layer">
 			<img id="logo" src="assets/img/logo.png">
 		</div>
 
-		<div class="container" id="layer-1">
+		<div class="container" id="menu-layer">
 			<div class="wrapper">
-				<button type="button" id="find-btn" class="btn btn-primary btn-menu">
-			  		Find Scabs
-				</button>
+		  		<button onclick="document.getElementById('find-scab').style.display='block'" class="btn btn-menu">Find Scabs</button>
 
-				<button type="button" id="rec-btn" class="btn btn-primary btn-menu">
-			  		Record Calories
-				</button>
+		  		<button onclick="document.getElementById('record-calories').style.display='block'" class="btn btn-menu">Record Calories</button>
 
-				<button type="button" id="view-btn" class="btn btn-primary btn-menu">
-			  		View Scabs
-				</button>
+		  		<button onclick="document.getElementById('view-scabs').style.display='block'" class="btn btn-menu">View Scabs</button>
 
-				<button type="button" id="view-btn" class="btn btn-primary btn-menu">
-			  		Profile Data
-				</button>
+		  		<button onclick="document.getElementById('profile-data').style.display='block'" class="btn btn-menu">Profile Data</button>
 			</div>
 		</div>
 
-		<div class="modal" id="find-modal">
-			<div class="modal-content animate-zoom">
-				<div class="modal-header">
-					<h2>Modal Header</h2>
-				    <span class="close">&times;</span>
-				</div>
-				<div class="modal-body">
-				    <p>Some text in the Modal Body</p>
-				    <p>Some other text...</p>
-				</div>
-				<div class="modal-footer">
-				    <h3>Modal Footer</h3>
-				</div>
-			</div>
+		<div class="container">
+		  	<div id="find-scab" class="modal">
+		    	<div class="modal-content animate-zoom">
+		      		<header class="container"> 
+		        		<span onclick="document.getElementById('find-scab').style.display='none'" 
+		        		class="modal-btn display-topright">&times;</span>
+		        		<h2>FIND SCABS</h2>
+		      		</header>
+		      	<div class="container">
+		       		<p>Some text..</p>
+		        	<p>Some text..</p>
+		      	</div>
+		      		<footer class="container">
+		        		<p>Modal Footer</p>
+		      		</footer>
+		    	</div>
+		  	</div>
 		</div>
 
-		<div id="background">
-			<div class="parallax" id="top-bkgd"></div>
-			<div class="parallax" id="mid-bkgd"></div>
-			<div class="parallax" id="bot-bkgd"></div>
+		<div class="container">
+		  	<div id="record-calories" class="modal">
+		    	<div class="modal-content animate-zoom">
+		      		<header class="container"> 
+		        		<span onclick="document.getElementById('record-calories').style.display='none'" 
+		        		class="modal-btn display-topright">&times;</span>
+		        		<h2>Record Calories</h2>
+		      		</header>
+		      	<div class="container">
+		       		<p>Some text..</p>
+		        	<p>Some text..</p>
+		      	</div>
+		      		<footer class="container">
+		        		<p>Modal Footer</p>
+		      		</footer>
+		    	</div>
+		  	</div>
 		</div>
+
+		<div class="container">
+		  	<div id="view-scabs" class="modal">
+		    	<div class="modal-content animate-zoom">
+		      		<header class="container"> 
+		        		<span onclick="document.getElementById('view-scabs').style.display='none'" 
+		        		class="modal-btn display-topright">&times;</span>
+		        		<h2>View Scabs</h2>
+		      		</header>
+		      	<div class="container">
+		       		<p>Some text..</p>
+		        	<p>Some text..</p>
+		      	</div>
+		      		<footer class="container">
+		        		<p>Modal Footer</p>
+		      		</footer>
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="container">
+		  	<div id="profile-data" class="modal">
+		    	<div class="modal-content animate-zoom">
+		      		<header class="container"> 
+		        		<span onclick="document.getElementById('profile-data').style.display='none'" 
+		        		class="modal-btn display-topright">&times;</span>
+		        		<h2>Profile Data</h2>
+		      		</header>
+		      	<div class="container">
+		       		<p>Some text..</p>
+		        	<p>Some text..</p>
+		      	</div>
+		      		<footer class="container">
+		        		<p>Modal Footer</p>
+		      		</footer>
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="background"></div>
 
 		<script src="assets/scripts/find.js"></script>	
 	</body>

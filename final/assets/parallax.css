@@ -1,32 +1,38 @@
-.parallax  {
-  position: fixed;
+.background {
+  position:absolute;
   z-index: -2;
+  top:0;
+  bottom:0;
   left:0;
   right:0;
-  bottom: 0;
+  background:url('img/grass.png') 0 0 , 
+    url('img/trees.png') 40% 0, 
+    url('img/trees_back.png') 80% 0, #000;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  -webkit-animation: moving-images 400s linear infinite;
+     -moz-animation: moving-images 400s linear infinite;
+       -o-animation: moving-images 400s linear infinite;
+          animation: moving-images 400s linear infinite;
 }
 
-@-webkit-keyframes slide {
+@keyframes moving-images {
   0%   {left:0;}
   50%  {left:-9999px;}
   100% {left:0;}
 }
-
-#top-bkgd {
-  top: 0;
-  height: 100%;
-  background:url('img/trees_back.png') repeat center;
-  -webkit-animation: slide 1000s linear infinite;
+@-moz-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
 }
-
-#mid-bkgd {
-  height: 100%;
-  background:url('img/trees.png') repeat;
-  -webkit-animation: slide 900s linear infinite;
+@-webkit-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
 }
-
-#bot-bkgd {
-  height: 192px;
-  background:url('img/grass.png') repeat;
-  -webkit-animation: slide 700s linear infinite;
+@-o-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
 }
