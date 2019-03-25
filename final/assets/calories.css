@@ -1,0 +1,15 @@
+#record-calories label, input {
+  display: block;
+  text-align: center;
+  line-height: 150%;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+#record-calories input {
+  border-radius: 40px;
+}
+
+#record-calories .btn-menu {
+  font-size: 30px;
+}

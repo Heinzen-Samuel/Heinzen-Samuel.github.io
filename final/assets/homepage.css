@@ -15,15 +15,7 @@ body {
   padding: 0.01em 16px;
 }
 
-#logo-layer {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-  z-index: 2;
-}
-
-#menu-layer {
+#wrapper {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -33,15 +25,17 @@ body {
 
 #logo {
   display: block;
-  z-index: 1;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  max-width: 100%;
+  min-width: 40%;
   transform: scale(1,1);
-  -webkit-animation: excited .8s linear infinite;
+  animation: excited .8s linear infinite;
 }
 
-@-webkit-keyframes excited {
+@keyframes excited {
   0%   {transform: scale(1,1);}
   50%  {transform: scale(1.03,.97);}
   100% {transform: scale(1,1);}
@@ -70,15 +64,18 @@ body {
   border-color: green;
   border-radius: 40px;
   font-size: 40px;
+  color: white;
   display: block;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.btn:hover {
-  background-color: gray;
-  border-color: gray;
+.btn-menu:hover {
+  background-color: #009e00;
+  border-color: #009e00;
+  border-radius: 40px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);
 }
 
 .btn:focus, 

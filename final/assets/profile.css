@@ -1,0 +1,38 @@
+#profile-data label, input {
+  display: block;
+  text-align: center;
+  line-height: 150%;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+#profile-data input {
+  border-radius: 40px;
+}
+
+#profile-data .btn-menu {
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+
+#profile-data {
+  box-sizing: border-box;
+}
+
+#profile-data .column {
+  float: left;
+  width: 21%;
+  padding: 2%;
+}
+
+/* Clearfix (clear floats) */
+#profile-data .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#profile-data img {
+  border-radius: 50%;
+  width:100%;
+}

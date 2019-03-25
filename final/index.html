@@ -10,25 +10,26 @@
 		<link rel="stylesheet" href="assets/parallax.css">
 		<link rel="stylesheet" href="assets/modal.css">
 		<link rel="stylesheet" href="assets/modal_content.css">
+
+		<link rel="stylesheet" href="assets/calories.css">
+
+		<link rel="stylesheet" href="assets/profile.css">
 	</head>
 	<body>
 		<div class="overhead">
 			<a href="../index.html" class="btn btn-primary">&#x25C1; Back</a>
 		</div>
 
-		<div id="logo-layer">
-			<img id="logo" src="assets/img/logo.png">
-		</div>
-
 		<div class="container" id="menu-layer">
+			<img id="logo" src="assets/img/logo.png">
 			<div class="wrapper">
-		  		<button onclick="document.getElementById('find-scab').style.display='block'" class="btn btn-menu">Find Scabs</button>
+		  		<button onclick="document.getElementById('find-scab').style.display='block'" class="btn btn-menu">Scab Finder</button>
 
-		  		<button onclick="document.getElementById('record-calories').style.display='block'" class="btn btn-menu">Record Calories</button>
+		  		<button onclick="document.getElementById('record-calories').style.display='block'" class="btn btn-menu">Calorie Recorder</button>
 
-		  		<button onclick="document.getElementById('view-scabs').style.display='block'" class="btn btn-menu">View Scabs</button>
+		  		<button onclick="document.getElementById('view-scabs').style.display='block'" class="btn btn-menu">Scab Viewer</button>
 
-		  		<button onclick="document.getElementById('profile-data').style.display='block'" class="btn btn-menu">Profile Data</button>
+		  		<button onclick="document.getElementById('profile-data').style.display='block'" class="btn btn-menu">Profile Loader</button>
 			</div>
 		</div>
 
@@ -60,11 +61,14 @@
 		        		<h1 align="center">CALORIE RECORDER</h1>
 		      		</header>
 		      	<div class="container">
-		       		<p>Some text..</p>
-		        	<p>Some text..</p>
+	      			<div>
+	      				<br>
+	      				<label for="calories">How much calories did you burn today?</label>
+	      				<input type="number" id="calories" name="calories">
+	      				<button onclick="addCalories()" class="btn btn-menu">Upload</button>
+	      			</div>
 		      	</div>
 		      		<footer class="container">
-		        		<p>Modal Footer</p>
 		      		</footer>
 		    	</div>
 		  	</div>
@@ -98,8 +102,28 @@
 		        		<h1 align="center">PROFILE LOADER</h1>
 		      		</header>
 		      	<div class="container">
-		       		<p>Some text..</p>
-		        	<p>Some text..</p>
+      				<br>
+      				<label for="profile-name">Create/Change your Profile Name</label>
+      				<input type="text" id="profile-name" name="profile-name">
+      				<button onclick="" class="btn btn-menu">Upload</button>
+		      	</div>
+		      	<div class="container">
+		      		<hr>
+      				<label for="profile-name">Choose a Profile Image</label>
+      				<div class="row">
+      					<div class="column">
+      						<img src="assets/img/players/roxia.png" alt="Roxia">
+      					</div>
+      					<div class="column">
+      						<img src="assets/img/players/melt.png" alt="Melt">
+      					</div>
+      					<div class="column">
+      						<img src="assets/img/players/melt.png" alt="HOLD">
+      					</div>
+  						<div class="column">
+      						<img src="assets/img/players/melt.png" alt="HOLD">
+      					</div>
+      				</div>
 		      	</div>
 		      		<footer class="container">
 		        		<p>Modal Footer</p>
@@ -110,6 +134,7 @@
 
 		<div class="background"></div>
 
-		<script src="assets/scripts/find.js"></script>	
+		<script src="assets/scripts/find.js"></script>
+		<script src="assets/scripts/calories.js"></script>	
 	</body>
 </html>
