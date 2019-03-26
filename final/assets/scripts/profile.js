@@ -1,3 +1,8 @@
+function changeName() {
+	var name = document.getElementById("profile-name").value;
+	localStorage.setItem('profileName', name);
+}
+
 function setRoxia() {
 	localStorage.setItem('profileImage','roxia.png');
 	document.getElementById('profile-image').src='assets/img/players/roxia.png';

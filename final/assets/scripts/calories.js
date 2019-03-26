@@ -1,13 +1,8 @@
 function addCalories() {
 	var calories = document.getElementById("calories").value;
-
-	if (localStorage.getItem('calories') === null) {
-		localStorage.setItem('calories',0);
-	}
-
-	var oldCalories = localStorage.getItem('calories');
+	var oldCalories = localStorage.getItem('profileCalories');
 	var newTotal = parseInt(calories) + parseInt(oldCalories);
 
-	localStorage.setItem('calories', newTotal);
+	localStorage.setItem('profileCalories', newTotal);
 	document.getElementById("calories").value = "";
 }
