@@ -14,10 +14,14 @@
 		<link rel="stylesheet" href="assets/calories.css">
 
 		<link rel="stylesheet" href="assets/profile.css">
+
 	</head>
 	<body>
 		<div class="overhead">
-			<a href="../index.html" class="btn btn-primary">&#x25C1; Back</a>
+			<a href="../index.html" class="btn btn-primary display-topleft">&#x25C1; Back</a>
+			<div class="profile-view display-topright">
+				<img src="assets/img/players/empty.png" alt="profile-image" id="profile-image">
+			</div>
 		</div>
 
 		<div class="container" id="menu-layer">
@@ -112,16 +116,16 @@
       				<label for="profile-name">Choose a Profile Image</label>
       				<div class="row">
       					<div class="column">
-      						<img src="assets/img/players/roxia.png" alt="Roxia">
+      						<img src="assets/img/players/roxia.png" alt="Roxia" onclick="setRoxia()">
       					</div>
       					<div class="column">
-      						<img src="assets/img/players/melt.png" alt="Melt">
+      						<img src="assets/img/players/max.png" alt="Max" onclick="setMax()">
       					</div>
       					<div class="column">
-      						<img src="assets/img/players/melt.png" alt="HOLD">
+      						<img src="assets/img/players/melt.png" alt="Melt" onclick="setMelt()">
       					</div>
   						<div class="column">
-      						<img src="assets/img/players/melt.png" alt="HOLD">
+      						<img src="assets/img/players/empty.png" alt="Empty" onclick="setEmpty()">
       					</div>
       				</div>
 		      	</div>
@@ -135,6 +139,8 @@
 		<div class="background"></div>
 
 		<script src="assets/scripts/find.js"></script>
-		<script src="assets/scripts/calories.js"></script>	
+		<script src="assets/scripts/calories.js"></script>
+		<script src="assets/scripts/profile.js"></script>
+		<script src="assets/scripts/settings.js"></script>	
 	</body>
 </html>
