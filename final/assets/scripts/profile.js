@@ -18,7 +18,7 @@ function setMelt() {
 	document.getElementById('profile-image').src='assets/img/players/melt.png';
 }
 
-function setEmpty() {
-	localStorage.setItem('profileImage','empty.png');
-	document.getElementById('profile-image').src='assets/img/players/empty.png';
+function setJaina() {
+	localStorage.setItem('profileImage','jaina.png');
+	document.getElementById('profile-image').src='assets/img/players/jaina.png';
 }

@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="assets/parallax.css">
 		<link rel="stylesheet" href="assets/modal.css">
 		<link rel="stylesheet" href="assets/modal_content.css">
-
+		<link rel="stylesheet" href="assets/finder.css">
 		<link rel="stylesheet" href="assets/calories.css">
 
 		<link rel="stylesheet" href="assets/profile.css">
@@ -33,7 +33,7 @@
 
 		  		<button onclick="document.getElementById('view-scabs').style.display='block'" class="btn btn-menu">Scab Viewer</button>
 
-		  		<button onclick="document.getElementById('profile-data').style.display='block'" class="btn btn-menu">Profile Loader</button>
+		  		<button onclick="document.getElementById('profile-data').style.display='block'" class="btn btn-menu">Profile Settings</button>
 			</div>
 		</div>
 
@@ -46,11 +46,16 @@
 		        		<h1 align="center">SCAB FINDER</h1>
 		      		</header>
 		      	<div class="container">
-		       		<p>Some text..</p>
-		        	<p>Some text..</p>
+		      		<div class="row">
+					    <div class="column">
+
+					    </div>
+					    <div class="column">
+					    	
+					    </div>
+					</div>
 		      	</div>
 		      		<footer class="container">
-		        		<p>Modal Footer</p>
 		      		</footer>
 		    	</div>
 		  	</div>
@@ -87,11 +92,9 @@
 		        		<h1 align="center">SCAB VIEWER</h1>
 		      		</header>
 		      	<div class="container">
-		       		<p>Some text..</p>
-		        	<p>Some text..</p>
+		       		<p>FEATURE UNDER CONSTRUCTION :)</p>
 		      	</div>
 		      		<footer class="container">
-		        		<p>Modal Footer</p>
 		      		</footer>
 		    	</div>
 		  	</div>
@@ -103,8 +106,8 @@
 		      		<header class="container"> 
 		        		<span onclick="document.getElementById('profile-data').style.display='none'" 
 		        		class="modal-btn display-topright">&times;</span>
-		        		<h1 align="center">PROFILE LOADER</h1>
-		      		</header>
+		        		<h1 align="center">PROFILE SETTINGS</h1>
+		      		</header>	
 		      	<div class="container">
       				<br>
       				<label for="profile-name">Create/Change your Profile Name</label>
@@ -125,12 +128,11 @@
       						<img src="assets/img/players/melt.png" alt="Melt" onclick="setMelt()">
       					</div>
   						<div class="column">
-      						<img src="assets/img/players/empty.png" alt="Empty" onclick="setEmpty()">
+      						<img src="assets/img/players/jaina.png" alt="Jaina" onclick="setJaina()">
       					</div>
       				</div>
 		      	</div>
 		      		<footer class="container">
-		        		<p>Modal Footer</p>
 		      		</footer>
 		    	</div>
 		  	</div>
@@ -138,9 +140,9 @@
 
 		<div class="background"></div>
 
+		<script src="assets/scripts/settings.js"></script>	
 		<script src="assets/scripts/find.js"></script>
 		<script src="assets/scripts/calories.js"></script>
 		<script src="assets/scripts/profile.js"></script>
-		<script src="assets/scripts/settings.js"></script>	
 	</body>
 </html>
