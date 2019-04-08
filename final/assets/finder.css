@@ -1,5 +1,4 @@
 #find-scab .column {
-  background-color: #ede6d0;
   float: left;
   width: 50%;
   height: 500px;
@@ -7,8 +6,35 @@
   margin-bottom: 10px;
 }
 
+#find-scab #left {
+  background-color: #ede6d0;
+  border-radius: 50%;
+}
+
+#find-scab #right {
+  background-image: url("img/find_scab_background.png");
+  background-size: cover;
+}
+
 #find-scab .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+#find-scab label, input {
+  display: block;
+  text-align: center;
+  line-height: 150%;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 30%;
+}
+
+#find-scab input {
+  border-radius: 40px;
+}
+
+#find-scab .btn-menu {
+  font-size: 30px;
 }
