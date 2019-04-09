@@ -12,6 +12,7 @@
 }
 
 #find-scab #right {
+  position: relative;
   background-image: url("img/find_scab_background.png");
   background-size: cover;
 }
@@ -37,4 +38,39 @@
 
 #find-scab .btn-menu {
   font-size: 30px;
+}
+
+#find-scab #scabProfile {
+  background-color: #6b8bff;
+  height: 350px;
+  width: 230px;
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  border: 1px solid blue;
+}
+
+#scabImage {
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  margin: auto;
+  width: 200px;
+}
+
+#find-scab #scabProfile p {
+  background-color: #96adff;
+  border-radius: 10px;
+  padding: 5px 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
 }

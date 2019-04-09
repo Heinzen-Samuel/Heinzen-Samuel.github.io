@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/modal_content.css">
 		<link rel="stylesheet" href="assets/finder.css">
 		<link rel="stylesheet" href="assets/calories.css">
-
+		<link rel="stylesheet" href="assets/view.css">
 		<link rel="stylesheet" href="assets/profile.css">
 
 	</head>
@@ -50,10 +50,17 @@
 					    <div class="column" id="left">
 					    	<label for="find">Calroies to use:</label>
 					    	<input type="number" id="find" name="find">
-					    	<button onclick="" class="btn btn-menu">Use</button>
+					    	<button onclick="findScab()" class="btn btn-menu">Use</button>
+					    	<button onclick="captureScab()" class="btn btn-menu">Capture!</button>
 					    </div>
 					    <div class="column" id="right">
-
+					    	<div id="scabProfile">
+					    		<img id="scabImage" src="assets/img/scabs/unknown.png">
+					    		<p id="scabName">&nbsp;NAME:</p>
+					    		<p id="scabType">&nbsp;TYPE:</p>
+					    		<p id="scabStrg">&nbsp;STRG:</p>
+					    		<p id="scabLuck">&nbsp;LUCK:</p>
+					    	</div>
 					    </div>
 					</div>
 		      	</div>
@@ -141,6 +148,9 @@
 		</div>
 
 		<div class="background"></div>
+
+		<script src="assets/data/dayScabs.js"></script>
+		<script src="assets/data/nightScabs.js"></script>	
 
 		<script src="assets/scripts/settings.js"></script>	
 		<script src="assets/scripts/find.js"></script>
