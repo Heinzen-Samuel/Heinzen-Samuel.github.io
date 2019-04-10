@@ -1,11 +1,28 @@
 function findScab() {
-	if (confirm("Confirm using calories to find new Scab?\nYou will lose current Scab.")) {
-		createScab(500);
-		drawScab();
-	} 
+	var calories = document.getElementById("caloriesUsed").value;
+	var oldCalories = localStorage.getItem('profileCalories');
+
+	if (calories == 0) {
+		alert("Calorie amount can't be nothing");
+	} else {
+
+		if (parseInt(calories) > parseInt(oldCalories)){
+			alert("You don't have that much calories stored!");
+		} else {
+
+			if (confirm("Confirm using calories to find new Scab?\nCurrent found scab will escape!")) {
+				var newTotal = parseInt(oldCalories) - parseInt(calories);
+				localStorage.setItem('profileCalories', newTotal);
+
+				createScab();
+				modifyStats(calories);
+				drawScab();
+			}
+		}
+	}
 }
 
-function createScab(calories) {
+function createScab() {
 	var rand = Math.floor((Math.random() * 6));
 	var date = new Date();
   	var hour = date.getHours();
@@ -23,6 +40,21 @@ function createScab(calories) {
 	localStorage.setItem('newScabStrg', name["strg"]);
 	localStorage.setItem('newScabLuck', name["luck"]);
 	localStorage.setItem('newScabImg', name["img"]);
+}
+
+function modifyStats(calories) {
+	var scabStrg = parseInt(localStorage.getItem('newScabStrg'));
+  	var scabLuck = parseInt(localStorage.getItem('newScabLuck'));
+
+  	var maxChg = (calories * (1/10));
+  	var randChgStrg = Math.floor((Math.random() * maxChg) + 1);
+  	var randChgLuck = Math.floor((Math.random() * maxChg) + 1);
+
+  	scabStrg += randChgStrg;
+  	scabLuck += randChgLuck;
+
+  	localStorage.setItem('newScabStrg', scabStrg);
+	localStorage.setItem('newScabLuck', scabLuck);
 }
 
 function drawScab() {

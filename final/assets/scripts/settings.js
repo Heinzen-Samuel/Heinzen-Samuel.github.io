@@ -17,3 +17,17 @@ if (localStorage.getItem('profileScabs') === null) {
 	var emptyArray = [];
 	localStorage.setItem('profileScabs', JSON.stringify(emptyArray));
 }
+
+if (localStorage.getItem('newScabName') !== null) {
+    var scabName = localStorage.getItem('newScabName');
+    var scabType = localStorage.getItem('newScabType');
+    var scabStrg = localStorage.getItem('newScabStrg');
+    var scabLuck = localStorage.getItem('newScabLuck');
+    var scabImg = localStorage.getItem('newScabImg');
+
+    document.getElementById("scabImage").src="assets/img/scabs/" + scabImg;
+    document.getElementById("scabName").innerHTML = "&nbsp;NAME: " + scabName;
+    document.getElementById("scabType").innerHTML = "&nbsp;TYPE: " + scabType;
+    document.getElementById("scabStrg").innerHTML = "&nbsp;STRG: " + scabStrg;
+    document.getElementById("scabLuck").innerHTML = "&nbsp;LUCK: " + scabLuck;
+}
